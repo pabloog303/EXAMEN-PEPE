@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Autos</title>
+</head>
+<body>
+    <h1>Lista de Autos</h1>
+    <ul>
+        {% for auto in autos %}
+            <li>{{ auto.marca }} {{ auto.modelo }} ({{ auto.año }}) - ${{ auto.precio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
